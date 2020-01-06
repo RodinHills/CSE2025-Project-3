@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 typedef double ElementType;
         #define Infinity (6000000000L)
 
@@ -6,16 +8,11 @@ typedef double ElementType;
 		#define MaxTrees (12)   /* Stores 2^9 -1 items */
         #define Capacity (4095)
 
-    //  #define MaxTrees (14)   /* Stores 2^14 -1 items */
-    //  #define Capacity (16383)
-		
-	//	#define MaxTrees (30)   /* Stores 2^30 -1 items */
-    //  #define Capacity (1073741823)
-
         struct BinNode;
         typedef struct BinNode *BinTree;
         struct Collection;
         typedef struct Collection *BinQueue;
+        typedef struct BinNode *Position;
 
         BinQueue Initialize( void );
         void Destroy( BinQueue H );
@@ -26,5 +23,12 @@ typedef double ElementType;
         ElementType FindMin( BinQueue H );
         int IsEmpty( BinQueue H );
         int IsFull( BinQueue H );
+        FILE *OpenInputFile();
+        Position CreateNewProcess(char *processName, int exeTime , int arrTime);
+        Position GetProcesses();
+        int GetExeTimeMax(Position processes);
+        int IsProcessExist(Position processes);
+        ElementType FindAWT(Position processes);
+        Position CopyProcesses(Position processes);
         #endif
 /* END */
