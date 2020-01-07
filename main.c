@@ -1,3 +1,9 @@
+/* Talha Bayburtlu 150118066                                                             *
+*  This project aims to optimize quantum size by creating an environment that processes  * 
+*  goes into processer by their priority.And those processes waits while the most prior  * 
+*  processes executes. With the help of changing quantum size optimized quantum size can * 
+*  be found with ease.                                                                   */
+
 #include "binomial.h"
 #include "fatal.h"
 #include <string.h>
