@@ -75,7 +75,7 @@ int main() {
         // Printing individual processes with their waiting time and average waiting time for current quantum size.
         printf("PID Waiting Time\n");
         for (Position currentProcess = currentProcesses ; currentProcess != NULL ; currentProcess = currentProcess->LLNext)
-            printf("%s %d\n" , currentProcess->processName , currentProcess->waitTime);
+            printf("%-4s %11d\n" , currentProcess->processName , currentProcess->waitTime);
         printf("Q -> %d AWT -> %lf \n------------------------------------\n" , quantumSize, currentAWT);
     }
 
