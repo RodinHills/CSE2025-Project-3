@@ -1,4 +1,4 @@
-# CSE2025-Project-3
+# Data-Structers-Project-3
 A project about implementing preemptive scheduling system using binomial heaps within Data Structers course.
 
 ## How it works
