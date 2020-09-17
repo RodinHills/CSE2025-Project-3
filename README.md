@@ -1,4 +1,4 @@
-# Data-Structers-Project-3
+# Preemptive-Scheduling-System
 A project about implementing preemptive scheduling system using binomial heaps within Data Structers course.
 
 ## How it works
